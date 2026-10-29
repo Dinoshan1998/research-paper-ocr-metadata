@@ -1,0 +1,278 @@
+[
+  {
+    "arxiv_id": "2503.18382",
+    "title": "PP-FormulaNet: Bridging Accuracy and Efficiency in Advanced Formula Recognition",
+    "authors": [
+      "Hongen Liu",
+      "Cheng Cui",
+      "Yuning Du",
+      "Yi Liu",
+      "Gang Pan"
+    ],
+    "publication_date": "2025-03-24",
+    "arxiv_pdf_url": "https://arxiv.org/pdf/2503.18382.pdf",
+    "arxiv_page_url": "https://arxiv.org/abs/2503.18382",
+    "github_url": "https://github.com/PaddlePaddle/PaddleOCR",
+    "is_official_code": true,
+    "tasks": [
+      "document-understanding",
+      "computer-vision",
+      "formula-recognition"
+    ],
+    "methods": [
+      "deep-learning",
+      "ocr",
+      "formula-recognition"
+    ],
+    "models": [
+      "PP-FormulaNet-L",
+      "PP-FormulaNet-S",
+      "UniMERNet"
+    ],
+    "datasets": [
+      "UniMERNet Benchmark",
+      "Formula Mining System Dataset"
+    ],
+    "sota_claims": [
+      {
+        "benchmark": "UniMERNet Benchmark",
+        "metric": "Accuracy improvement",
+        "value": "+6.0%",
+        "comparison_target": "UniMERNet"
+      },
+      {
+        "benchmark": "Formula recognition inference",
+        "metric": "Speedup factor",
+        "value": "over 16x faster",
+        "comparison_target": "UniMERNet"
+      }
+    ],
+    "abstract": "Formula recognition converts mathematical expressions from document images into structured symbolic formats such as LaTeX. PP-FormulaNet provides two variants: PP-FormulaNet-L for high accuracy and PP-FormulaNet-S for high efficiency. The paper reports a 6% accuracy improvement over UniMERNet for the L variant and over 16x faster inference for the S variant, and introduces a Formula Mining System for collecting high-quality formula data."
+  },
+  {
+    "arxiv_id": "2510.13998",
+    "title": "BitNet Distillation",
+    "authors": [
+      "Xun Wu",
+      "Shaohan Huang",
+      "Wenhui Wang",
+      "Ting Song",
+      "Li Dong",
+      "Yan Xia",
+      "Furu Wei"
+    ],
+    "publication_date": "2025-10-15",
+    "arxiv_pdf_url": "https://arxiv.org/pdf/2510.13998.pdf",
+    "arxiv_page_url": "https://arxiv.org/abs/2510.13998",
+    "github_url": "https://github.com/microsoft/BitNet",
+    "is_official_code": true,
+    "tasks": [
+      "language-model-compression",
+      "model-distillation",
+      "efficient-inference"
+    ],
+    "methods": [
+      "quantization",
+      "knowledge-distillation",
+      "continual-pretraining"
+    ],
+    "models": [
+      "BitNet Distillation (BitDistill)",
+      "BitNet b1.58",
+      "Qwen3",
+      "Qwen2.5",
+      "Gemma",
+      "MiniLM"
+    ],
+    "datasets": [
+      "MNLI",
+      "QNLI",
+      "SST-2",
+      "CNN/DailyMail"
+    ],
+    "sota_claims": [
+      {
+        "benchmark": "Model memory usage",
+        "metric": "Memory savings",
+        "value": "up to 10x",
+        "comparison_target": "full-precision counterpart models"
+      },
+      {
+        "benchmark": "CPU inference",
+        "metric": "Inference speedup",
+        "value": "2.65x faster",
+        "comparison_target": "full-precision counterpart models"
+      }
+    ],
+    "abstract": "BitNet Distillation (BitDistill) fine-tunes full-precision language models into 1.58-bit precision for specific downstream tasks. It combines SubLN, multi-head attention distillation, and continual pre-training. Experiments report performance comparable to full-precision counterpart models, up to 10x memory savings, and 2.65x faster CPU inference."
+  },
+  {
+    "arxiv_id": "2607.18859",
+    "title": "PhoenixRepair: Rethinking Repair Strategy Exploration in Software Agents",
+    "authors": [
+      "Tianyue Jiang",
+      "Yanlin Wang",
+      "Xin He",
+      "Daya Guo",
+      "Jiachi Chen",
+      "Ming Wen",
+      "Ensheng Shi",
+      "Xilin Liu",
+      "Yuchi Ma",
+      "Guanbin Li"
+    ],
+    "publication_date": "2026-07-21",
+    "arxiv_pdf_url": "https://arxiv.org/pdf/2607.18859.pdf",
+    "arxiv_page_url": "https://arxiv.org/abs/2607.18859",
+    "github_url": "https://github.com/DeepSoftwareAnalytics/PhoenixRepair",
+    "is_official_code": true,
+    "tasks": [
+      "automated-program-repair",
+      "software-engineering"
+    ],
+    "methods": [
+      "multi-agent-systems",
+      "iterative-refinement",
+      "fault-localization"
+    ],
+    "models": [
+      "PhoenixRepair",
+      "DeepSeek-V3.1",
+      "MiniMax-M2.5",
+      "SWE-agent"
+    ],
+    "datasets": [
+      "SWE-bench Verified"
+    ],
+    "sota_claims": [
+      {
+        "benchmark": "SWE-bench-Verified",
+        "metric": "Relative improvement",
+        "value": "7.8%",
+        "comparison_target": "SWE-agent under DeepSeek-V3.1"
+      },
+      {
+        "benchmark": "SWE-bench-Verified",
+        "metric": "Resolved rate (Pass@1)",
+        "value": "76.0%",
+        "comparison_target": "previous methods; MiniMax-M2.5 backbone"
+      }
+    ],
+    "abstract": "PhoenixRepair is a multi-agent framework for exploring software repair strategies through multi-location sampling, iterative reflection, and refinement of generated patches. On SWE-bench-Verified, it reports a 7.8% relative improvement over SWE-agent with DeepSeek-V3.1 and a 76.0% Pass@1 resolved rate with MiniMax-M2.5."
+  },
+  {
+    "arxiv_id": "2507.23370",
+    "title": "Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling",
+    "authors": [
+      "Trae Research Team",
+      "Pengfei Gao",
+      "Zhao Tian",
+      "Xiangxin Meng",
+      "Xinchen Wang",
+      "Ruida Hu",
+      "Yuanan Xiao",
+      "Yizhou Liu",
+      "Zhao Zhang",
+      "Junjie Chen",
+      "Cuiyun Gao",
+      "Yun Lin",
+      "Yingfei Xiong",
+      "Chao Peng",
+      "Xia Liu"
+    ],
+    "publication_date": "2025-07-31",
+    "arxiv_pdf_url": "https://arxiv.org/pdf/2507.23370.pdf",
+    "arxiv_page_url": "https://arxiv.org/abs/2507.23370",
+    "github_url": "https://github.com/bytedance/trae-agent",
+    "is_official_code": true,
+    "tasks": [
+      "software-engineering",
+      "issue-resolution",
+      "coding-agents"
+    ],
+    "methods": [
+      "agent-based-ensemble-reasoning",
+      "test-time-scaling",
+      "repository-level-understanding"
+    ],
+    "models": [
+      "Trae Agent"
+    ],
+    "datasets": [
+      "SWE-bench",
+      "SWE-bench Verified"
+    ],
+    "sota_claims": [
+      {
+        "benchmark": "SWE-bench",
+        "metric": "Average Pass@1 improvement over baselines",
+        "value": "10.22%",
+        "comparison_target": "four state-of-the-art ensemble reasoning baselines"
+      },
+      {
+        "benchmark": "SWE-bench Verified",
+        "metric": "Pass@1",
+        "value": "75.20%",
+        "comparison_target": "SWE-bench Verified leaderboard methods at publication time"
+      }
+    ],
+    "abstract": "Trae Agent is an agent-based ensemble-reasoning approach for repository-level software issue resolution. It uses modular generation, pruning, and selection agents to explore ensemble spaces and improve repository understanding. The paper reports a 10.22% average Pass@1 improvement over baselines and a 75.20% Pass@1 score on SWE-bench Verified."
+  },
+  {
+    "arxiv_id": "2503.11651",
+    "title": "VGGT: Visual Geometry Grounded Transformer",
+    "authors": [
+      "Jianyuan Wang",
+      "Minghao Chen",
+      "Nikita Karaev",
+      "Andrea Vedaldi",
+      "Christian Rupprecht",
+      "David Novotny"
+    ],
+    "publication_date": "2025-03-14",
+    "arxiv_pdf_url": "https://arxiv.org/pdf/2503.11651.pdf",
+    "arxiv_page_url": "https://arxiv.org/abs/2503.11651",
+    "github_url": "https://github.com/facebookresearch/vggt",
+    "is_official_code": true,
+    "tasks": [
+      "3d-reconstruction",
+      "computer-vision",
+      "depth-estimation",
+      "point-tracking"
+    ],
+    "methods": [
+      "feed-forward-transformer",
+      "3d-vision",
+      "pretrained-feature-backbone"
+    ],
+    "models": [
+      "VGGT",
+      "VGGT-1B"
+    ],
+    "datasets": [
+      "CO3Dv2",
+      "RealEstate10K",
+      "ScanNet",
+      "Hypersim",
+      "BlendMVS",
+      "MVS-Synth",
+      "PointOdyssey",
+      "Virtual KITTI"
+    ],
+    "sota_claims": [
+      {
+        "benchmark": "3D scene reconstruction",
+        "metric": "Reconstruction time",
+        "value": "under 1 second",
+        "comparison_target": "methods requiring post-processing with visual geometry optimization"
+      },
+      {
+        "benchmark": "Camera estimation, multi-view depth, point-cloud reconstruction, point tracking",
+        "metric": "State-of-the-art performance",
+        "value": "SOTA (no single numeric value stated in abstract)",
+        "comparison_target": "prior methods"
+      }
+    ],
+    "abstract": "VGGT is a feed-forward neural network that infers scene attributes—including camera parameters, point maps, depth maps, and 3D point tracks—from one or more views. It reconstructs images in under one second and reports state-of-the-art results across several 3D vision tasks, while outperforming alternatives that require post-processing."
+  }
+]
